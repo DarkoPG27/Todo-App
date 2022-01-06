@@ -7,10 +7,15 @@ class Todo extends Component {
             isEditing: false
         }
         this.handleRemove = this.handleRemove.bind(this);
+        this.toggleForm = this.toggleForm.bind(this);
     }
 
     handleRemove() {
         this.props.removeTodo(this.props.id)
+    }
+
+    toggleForm() {
+        this.setState({ isEditing: !this.state.isEditing })
     }
 
     render() {
@@ -25,7 +30,7 @@ class Todo extends Component {
         } else {
             result = (
                 <div>
-                    <button>Edit</button>
+                    <button onClick={this.toggleForm}>Edit</button>
                     <button onClick={this.handleRemove}>X</button>
                     <li>{this.props.task}</li>
                 </div>
