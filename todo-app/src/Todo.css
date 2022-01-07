@@ -4,6 +4,7 @@
     padding: 1.1rem 3rem;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     background: rgba(255,255,255,0.1);
 }
 
@@ -39,10 +40,15 @@
     padding-left: 0.7em;
 }
 
+ .fas:hover {
+   font-size: 1.25rem;
+   color:rgb(245, 222, 222)
+   }
+
 .Todo-buttons button{
     border: none;
-    font-size: 1em;
-    margin: 0.4em;
+    font-size: 1.2em;
+    margin: 0.5em;
     background: none;
     -webkit-appearance: none;
     cursor: pointer;
