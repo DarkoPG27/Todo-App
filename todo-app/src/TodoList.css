@@ -4,6 +4,7 @@
     max-width: 500px;
     background: #ff6666;
     color: #fff;
+    border-radius: 20px;
     box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
 }
 
