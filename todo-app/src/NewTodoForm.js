@@ -34,6 +34,7 @@ class NewTodoForm extends Component {
                     value={this.state.task}
                     onChange={this.handleChange}
                 />
+
                 {this.state.task.length > 3 ? <button>Add Todo</button> : <button disabled>Add Todo</button>}
 
             </form>
